@@ -4,8 +4,11 @@ from __future__ import annotations
 
 from icalendar.error import CalendarDecodeError
 
+#: The supported sequence types.
 SEQUENCE_TYPES = (list, tuple)
+#: The default encoding to use when encoding or decoding iCalendar data.
 DEFAULT_ENCODING = "utf-8"
+#: The type of data that can be encoded or decoded.
 ICAL_TYPE = str | bytes
 
 
