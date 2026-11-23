@@ -75,7 +75,7 @@ class CalendarDecodeError(InvalidCalendar):
 
     Parameters:
         error: The error raised while decoding the data.
-    """"    
+    """
 
     encoding: str
     """The encoding that was used to decode the data."""
@@ -94,8 +94,8 @@ class CalendarDecodeError(InvalidCalendar):
         line_number = error.object.count(b"\n", 0, error.start) + 1
         super().__init__(
             f"Could not decode {value!r} at position {error.start} (line "
-            f"{line_number}) as {error.encoding}. RFC 5545 requires iCalendar "
-            "data to be UTF-8. To find out how to proceed, see "
+            f"{line_number}) as {error.encoding}. RFC 5545 sets the default "
+            "encoding of iCalendar data to UTF-8. To find out how to proceed, see "
             "https://icalendar.readthedocs.io/en/stable/reference/api/"
             "icalendar.error.html#icalendar.error.CalendarDecodeError "
             "and https://github.com/collective/icalendar/issues/1793"
