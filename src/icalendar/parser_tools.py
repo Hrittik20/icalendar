@@ -37,7 +37,7 @@ def to_unicode(value: ICAL_TYPE, encoding: str = "utf-8-sig") -> str:
     """Converts a value to Unicode, even if it is already a Unicode string.
 
     Parameters:
-        value: The value to convert.
+        value: Required. The value to convert.
         encoding: The encoding to use in the conversion.
 
     Raises:
