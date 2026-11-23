@@ -72,7 +72,10 @@ class CalendarDecodeError(InvalidCalendar):
     The original :class:`UnicodeDecodeError` is chained as ``__cause__``.
 
     ..  versionadded:: 0.0.0
-    """
+
+    Parameters:
+        error: The error raised while decoding the data.
+    """"    
 
     encoding: str
     """The encoding that was used to decode the data."""
