@@ -66,7 +66,7 @@ class CalendarDecodeError(InvalidCalendar):
     to :meth:`Calendar.from_ical <icalendar.cal.calendar.Calendar.from_ical>`.
     See :doc:`/how-to/parse-errors` for examples.
     If you get such calendars from a well-known application,
-    please open an issue related to :issue:`1793`.
+    open an issue related to :issue:`1793`.
 
     The original :class:`UnicodeDecodeError` is chained as ``__cause__``.
 
