@@ -144,7 +144,7 @@ When you access a property descriptor like :attr:`event.DTSTART <icalendar.cal.e
 Parse calendars that are not UTF-8
 ----------------------------------
 
-:rfc:`5545#section-3.1.4` requires iCalendar data to be UTF-8.
+:rfc:`5545#section-3.1.4` sets the default character set encoding of iCalendar data to UTF-8.
 Some applications still export calendars in other encodings, such as ``cp1252``.
 If the data is not valid UTF-8, :meth:`Calendar.from_ical <icalendar.cal.calendar.Calendar.from_ical>` raises an :class:`~icalendar.error.ICalDecodeError`.
 
