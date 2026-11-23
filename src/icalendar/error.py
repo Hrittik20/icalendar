@@ -58,7 +58,8 @@ class ICalParsingError(InvalidCalendar):
 class CalendarDecodeError(InvalidCalendar):
     """The calendar data could not be decoded.
 
-    :rfc:`5545#section-3.1.4` requires iCalendar data to be UTF-8.
+    :rfc:`5545#section-3.1.4` sets the default character set encoding
+    of iCalendar data to UTF-8.
     icalendar does not guess another encoding,
     because a wrong guess silently turns the text into different characters.
 
