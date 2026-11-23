@@ -90,11 +90,6 @@ class CalendarDecodeError(InvalidCalendar):
     """The line of the bytes that could not be decoded, starting at 1."""
 
     def __init__(self, error: UnicodeDecodeError) -> None:
-        """Create a new CalendarDecodeError.
-
-        Parameters:
-            error: The error raised while decoding the data.
-        """
         value = error.object[error.start : error.end]
         line_number = error.object.count(b"\n", 0, error.start) + 1
         super().__init__(
